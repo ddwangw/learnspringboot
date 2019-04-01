@@ -1,0 +1,10 @@
+一、The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone
+在数据库mysql链接上增加：&serverTimezone=UTC
+
+二、在不使用mongodb等相关模块的时候，pom文件不能引入，此时spring会自动读取默认配置，报错
+
+三、关于项目中增加jsp文件方式
+
+	建立webpage，并添加到项目资源下。同时spring支持的web框架，不用引入。同时增加支持jsp的相关包配置，详情参见pom文件配置
+	
+四、项目文件在修改后，不能进行热部署
