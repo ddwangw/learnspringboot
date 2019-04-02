@@ -7,15 +7,16 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
    <script type="text/javascript">
-  var params = {
-		  userId: 1,
-		  productId: 1,
-		  quantity: 3
+  for(var i=1;i<=50;i++){
+	  var params = {
+			  userId: 1,
+			  productId: 1,
+			  quantity: 1
+	  }
+	//通过post请求后端
+	  $.post("./purchase",params,function(result){
+	  });
   }
-  //通过post请求后端
-  $.post("./purchase",params,function(result){
-	alert(result.message);	  
-  });
   </script>
   <body>
   	<h1>抢购产品测试</h1>
