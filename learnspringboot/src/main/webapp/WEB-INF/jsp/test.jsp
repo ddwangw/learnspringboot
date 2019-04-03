@@ -7,7 +7,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
    <script type="text/javascript">
-  for(var i=1;i<=50;i++){
+  for(var i=1;i<=1;i++){
 	  var params = {
 			  userId: 1,
 			  productId: 1,
@@ -15,6 +15,7 @@
 	  }
 	//通过post请求后端
 	  $.post("./purchase",params,function(result){
+		  
 	  });
   }
   </script>
